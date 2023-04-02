@@ -1,0 +1,32 @@
+- O Git Bash é um terminal extendido para otimizar o uso do Git.
+
+
+Comandos Usados:
+git init - Isso cria um novo subdiretório chamado .git que contem todos os arquivos necessários de seu repositório — um esqueleto de repositório Git
+
+git clone - Colar repositorio que foi criado no GitHub
+
+git add - Mover arquivos, usar git add . ou git add -A para adicionar no GitHub
+
+git status - O comando lhe mostra em qual branch você se encontra.
+
+git diff - Se o comando git status for muito vago — você quer saber exatamente o que você alterou, não apenas quais arquivos foram alterados — você pode utilizar o comando.
+
+
+git commit - Armazena o conteúdo atual do índice em um novo commit, juntamente com uma mensagem de registro do usuário que descreve as mudanças.
+-Se usa o commit depois de já ter feito o git add, para fazer o commit: git commit -m "Mensagem"
+-Para commitar também os arquivos versionados mesmo não estando no Stage basta adicionar o parâmetro -a: git commit -a -m "Mensagem"
+-Refazendo commit quando esquecer de adicionar um arquivo no Stage:  git commit -m "Mensagem" --amend
+
+
+git reset  - *Cuidado ao usar, pois pode perder algum trabalho. 
+-Para voltar ao último commit: git reset --hard HEAD~1
+-Para voltar ao último commit e mantém os últimos arquivos no Stage: git reset --soft HEAD~1
+-Volta para o commit com a hash XXXXXXXXXXX: git reset --hard XXXXXXXXXXX
+
+*Recuperando commit apagado pelo git reset
+-Para visualizar os hashs: git reflog
+-E para aplicar: git merge {hash}
+
+
+
